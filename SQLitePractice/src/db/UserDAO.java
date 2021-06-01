@@ -227,10 +227,13 @@ public class UserDAO extends DAOBase{
 		try {
 			pstmt = conn.prepareStatement(sql);
 			rs = pstmt.executeQuery();
-			rs.last();
-			int getRowNum = rs.getRow();
+			int getRowNum = 0;
+			while(rs.next()) {
+				getRowNum++;
+			}
 			if(getRowNum>0) {
-				rs.beforeFirst();
+				pstmt = conn.prepareStatement(sql);
+				rs = pstmt.executeQuery();
 				UserData[] datas = new UserData[getRowNum];
 				int i =0;
 				while(rs.next()) {

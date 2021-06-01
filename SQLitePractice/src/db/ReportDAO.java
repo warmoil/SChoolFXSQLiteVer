@@ -52,12 +52,16 @@ public class ReportDAO extends DAOBase{
 				getRowNum++;
 			}
 			if(getRowNum>0) {
-				pstmt = conn.prepareStatement(sql);
-				rs = pstmt.executeQuery();
+				DAOBase base2 = new DAOBase();
+				Connection conn2 = base2.conn;
+				PreparedStatement pstmt2 = null; 
+				ResultSet rs2 = null; 
+				pstmt2 = conn2.prepareStatement(sql);
+				rs2 = pstmt2.executeQuery();
 				ReportData[] datas = new ReportData[getRowNum];
 				int i=0;
-				while(rs.next()) {
-					datas[i] = new ReportData(rs.getString("reporter"),rs.getString("cId"), rs.getString("title"), rs.getInt("num"),rs.getString("reason"),false);
+				while(rs2.next()) {
+					datas[i] = new ReportData(rs2.getString("reporter"),rs2.getString("cId"), rs2.getString("title"), rs2.getInt("num"),rs2.getString("reason"),false);
 					i++;
 				}
 				return datas;
