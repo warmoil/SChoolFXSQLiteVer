@@ -62,7 +62,7 @@ CREATE TABLE `report` (
 
 LOCK TABLES `report` WRITE;
 /*!40000 ALTER TABLE `report` DISABLE KEYS */;
-INSERT INTO `report` VALUES ('ㅈㄹㄷㅈㅂ','test','ㅎㄱㅂㄷㅎㅁ','ㅎㅂㅈㄷㄱ',20),('ㄹㄷㅈㄹㄷ','test','ㅁㄹㄴㅇㄹㅇㄴㅁ','ㅂㄹㅇㅁㄴㅁ',22),('장수우','fuck','조용히해','시끄러움',23),('심일식','lily5','이새끼 캡스톤으로 자꾸 괴롭게 함','자꾸 귀찮게함',26),('정온유','test','ㄷ12ㄷㅈㅂㅁㄷㅇㅁ','ㄷ12ㄷ21',28),('정온유','test','123123421','정온유',29);
+INSERT INTO `report` VALUES ('test1','test','ㅎㄱㅂㄷㅎㅁ','ㅎㅂㅈㄷㄱ',20),('ㄹㄷㅈㄹㄷ','test','ㅁㄹㄴㅇㄹㅇㄴㅁ','ㅂㄹㅇㅁㄴㅁ',22),('장수우','쉿','조용히해','시끄러움',23),('심일식','lily5','과제가 너무 많습니다','힘들어요',26),('정온유','test','ㄷ12ㄷㅈㅂㅁㄷㅇㅁ','ㄷ12ㄷ21',28),('정온유','test','123123421','정온유',29);
 /*!40000 ALTER TABLE `report` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -89,7 +89,7 @@ CREATE TABLE `user` (
 
 LOCK TABLES `user` WRITE;
 /*!40000 ALTER TABLE `user` DISABLE KEYS */;
-INSERT INTO `user` VALUES ('fasdwe','1111','12341','514542213','1321321'),('fuck','fuck','fuck','담배는?','말보로'),('lily5','1234','블랙','내가마지막으로 가본 해외여행지는?','일본'),('qweqwe','1111','12312413','213123132','421421321'),('test','test','test','담배는?','말보로'),('testt','11111','123124','2311455','12431243');
+INSERT INTO `user` VALUES ('fasdwe','1111','12341','514542213','1321321'),('hello','im','fine','abv?','fads'),('lily5','1234','블랙','내가마지막으로 가본 해외여행지는?','일본'),('qweqwe','1111','12312413','213123132','421421321'),('test','test','test','sdf?','wfe'),('testt','11111','123124','2311455','12431243');
 /*!40000 ALTER TABLE `user` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
